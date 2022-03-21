@@ -2,7 +2,7 @@ import styles from "./Overlay.module.css";
 function Overlay({ setAds, endAds }) {
   return (
     <div className={styles.overlay}>
-      <video controls={false} autoPlay muted onEnded={endAds}>
+      <video controls={false} autoPlay muted onEnded={endAds} width={"100%"}>
         <source src="https://res.cloudinary.com/kizmelvin/video/upload/v1647619418/ads_zt8s6i.mov" />
       </video>
 

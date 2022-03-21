@@ -18,10 +18,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Video Ads Project </title>
+        <title>Video Ads Project</title>
       </Head>
       <main className={styles.main}>
-        <video controls onPlay={playAds} onEnded={endAds}>
+        <video controls onPlay={playAds} onEnded={endAds} width={"100%"}>
           <source src="https://res.cloudinary.com/kizmelvin/video/upload/v1647620339/Social_Media_-_1360_dkrwhg.mp4" />
         </video>
         {ads && <Overlay setAds={setAds} endAds={endAds} />}
